@@ -1,7 +1,15 @@
 @import 'normilize/reset';
 
+@import 'node_modules/swiper/swiper-bundle';
+
 @import "./mixin/fonts";
 @import "fonts";
 
 @import "./setting/variables";
 @import "./setting/main";
+
+@import "./elements/header";
+@import "./elements/menu";
+@import "./elements/button";
+
+@import "./section/main";

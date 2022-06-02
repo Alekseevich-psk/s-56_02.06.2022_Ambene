@@ -1,0 +1,69 @@
+.header {
+    transition: $transition;
+
+    &__wrapper {
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 34px 0 20px;
+
+        @media(max-width: 1200px) {
+            background-color: $bgHeader;
+            box-shadow: 0 5px 10px $shadowBtn;
+        }
+
+        &.scroll {
+            padding: 16px 0;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: 1200px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__inner {
+        &--logo {
+            width: 240px;
+            height: 26px;
+            background-color: $active;
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: contain;
+            mask-image: url('../images/svg/logo.svg');
+        }
+
+        &--nav {
+            @media(max-width: 1200px) {
+                width: 100%;
+                order: 2;
+                overflow-y: auto;
+            }
+        }
+    }
+
+    &__btn-menu {
+        display: none;
+        width: 32px;
+        height: 32px;
+        background-color: $active;
+        mask-size: 100% 100%;
+        mask-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3e%3cpath fill='%2301325E' d='M20.05 11H3.95a.95.95 0 0 0-.95.95v.1c0 .525.425.95.95.95h16.1a.95.95 0 0 0 .95-.95v-.1a.95.95 0 0 0-.95-.95Zm0 5H3.95a.95.95 0 0 0-.95.95v.1c0 .525.425.95.95.95h16.1a.95.95 0 0 0 .95-.95v-.1a.95.95 0 0 0-.95-.95Zm0-10H3.95a.95.95 0 0 0-.95.95v.1c0 .525.425.95.95.95h16.1a.95.95 0 0 0 .95-.95v-.1a.95.95 0 0 0-.95-.95Z'/%3e%3c/svg%3e");
+
+        &.active {
+            mask-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3e%3cpath fill='%2301325E' d='m12.94 12 5.527-5.527a.667.667 0 0 0-.94-.94L12 11.06 6.473 5.527a.67.67 0 1 0-.946.946L11.06 12l-5.533 5.527a.667.667 0 1 0 .94.94L12 12.94l5.527 5.527a.667.667 0 0 0 .94-.94L12.94 12Z'/%3e%3c/svg%3e");
+        }
+
+        @media(max-width: 1200px) {
+            display: block;
+        }
+    }
+
+}
