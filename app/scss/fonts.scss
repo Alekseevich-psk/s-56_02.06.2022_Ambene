@@ -1,3 +1,7 @@
+@include font("axiforma", "Axiforma-Bold", "900", "normal");
+@include font("axiforma", "Axiforma-Light", "300", "normal");
+@include font("axiforma", "Axiforma-LightItalic", "400", "italic");
+@include font("axiforma", "Axiforma-Regular", "400", "normal");
 @include font("roboto", "Roboto-Black", "900", "normal");
 @include font("roboto", "Roboto-BlackItalic", "900", "italic");
 @include font("roboto", "Roboto-LightItalic", "300", "italic");
@@ -9,3 +13,4 @@
 @include font("roboto", "Roboto-Bold", "700", "normal");
 @include font("roboto", "Roboto-BoldItalic", "700", "italic");
 @include font("robotoCondensed", "RobotoCondensed-Regular", "400", "normal");
+@include font("robotoCondensed", "RobotoCondensed-Italic", "400", "italic");
