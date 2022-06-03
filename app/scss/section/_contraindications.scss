@@ -1,0 +1,20 @@
+.contraindications {
+
+    &__text {
+        font-size: 30px;
+        font-family: "robotoCondensed";
+        text-transform: uppercase;
+        line-height: 120%;
+        text-align: center;
+        color: $active;
+        border-bottom: 1px solid $active;
+        padding-bottom: 10px;
+
+        @media(max-width: 960px) {
+            font-size: 20px;
+        }
+    }
+
+}
+
+  
