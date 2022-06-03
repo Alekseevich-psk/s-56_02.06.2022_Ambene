@@ -1,0 +1,42 @@
+.sub {
+    display: inline-block;
+    position: relative;
+
+    sub {
+        cursor: pointer;
+    }
+
+    &:hover {
+        .sub__body {
+            opacity: 1;
+            height: auto;
+            visibility: visible;
+        }
+    }
+
+    &__body {
+        opacity: 0;
+        height: 0;
+        visibility: hidden;
+        position: absolute;
+        z-index: 10;
+        bottom: 110%;
+        transform:translateX(-50%);
+        width: 320px;
+        text-transform: none;
+        left: 50%;
+        font-size: 13px;
+        line-height: 120%;
+        background-color: rgba(255, 255, 255, 0.92);
+        border-radius: 20px;
+        padding: 16px;
+
+        span {
+            color: $subActive;
+        }
+
+        a {
+            color: $active;
+        }
+    }
+}

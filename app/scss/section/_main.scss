@@ -135,6 +135,10 @@
         }
 
         span {
+            sup {
+
+            }
+
             &:first-child {
                 color: $active;
             }
@@ -166,11 +170,12 @@
 
     &__att {
         position: absolute;
-        bottom: -40px;
+        bottom: -16px;
         color: $active;
         opacity: 0.8;
         font-style: italic;
-        font-size: 13px;
+        font-size: 12px;
+        line-height: 110%;
         text-transform: uppercase;
         font-family: "robotoCondensed";
 
