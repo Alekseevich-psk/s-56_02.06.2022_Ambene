@@ -8,21 +8,16 @@
 
     &:hover {
         .sub__body {
-            opacity: 1;
-            height: auto;
-            visibility: visible;
+            display: block;
         }
     }
 
     &__body {
-        opacity: 0;
-        height: 0;
-        visibility: hidden;
+        display: none;
         position: absolute;
         z-index: 10;
         bottom: 110%;
         transform:translateX(-50%);
-        width: 320px;
         text-transform: none;
         left: 50%;
         font-size: 13px;
@@ -30,6 +25,14 @@
         background-color: rgba(255, 255, 255, 0.92);
         border-radius: 20px;
         padding: 16px;
+
+        @media(min-width: 1200px) {
+            width: 320px;
+        }
+
+        @media(max-width: 960px) {
+            position: relative;
+        }
 
         span {
             color: $subActive;
