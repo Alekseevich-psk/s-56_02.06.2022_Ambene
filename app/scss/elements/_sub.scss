@@ -32,6 +32,9 @@
 
         @media(max-width: 960px) {
             position: relative;
+            top: auto;
+            left: auto;
+            transform: none;
         }
 
         span {
