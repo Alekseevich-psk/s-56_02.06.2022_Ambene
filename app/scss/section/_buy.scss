@@ -1,0 +1,41 @@
+.buy {
+    padding: 0 0 120px;
+
+    @media(max-width: 960px) {
+        padding: 0 0 60px; 
+    }
+
+    &__bg {
+        height: 400px;
+        background-image: url('../images/get-buy-bg.png');
+        background-size: cover;
+        margin-bottom: 32px;
+    }
+
+    &__s-title {
+        margin-bottom: 26px;
+    }
+
+    &__slide {
+        height: 140px;
+        background-color: $active;
+        border-radius: 16px;
+        padding: 20px;
+        color: $whiteColorText;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff;
+    }
+}
