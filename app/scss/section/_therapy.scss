@@ -6,6 +6,10 @@
     background-position: center;
     background-image: url("../images/terapia-bg.png");
 
+    @media(min-width: 1920px) {
+        background-size: contain;
+    }
+
     @media (max-width: 540px) {
         background-size: contain;
     }
