@@ -1,0 +1,17 @@
+.footer {
+    padding: 30px 0;
+
+    @media(max-width: 960px) {
+        padding: 20px 0;
+    }
+
+    &__logo {
+        width: 240px;
+        height: 26px;
+        background-color: $active;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        mask-size: contain;
+        mask-image: url('../images/svg/logo.svg');
+    }
+}
