@@ -1,5 +1,9 @@
 .slider-arrows {
 
+    @media(max-width: 768px) {
+        display: none;
+    }
+
     &__arrow {
         cursor: pointer;
         position: absolute;

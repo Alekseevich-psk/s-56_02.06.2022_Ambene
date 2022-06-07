@@ -45,3 +45,40 @@
         },
     });
 })();
+
+(function () {
+
+    const slidersWrapper = document.querySelectorAll(".news__container");
+
+    if (slidersWrapper.length) {
+        slidersWrapper.forEach((el) => {
+            let slider = el.querySelector(".news__slider");
+            new Swiper(slider, {
+                preloadImages: false,
+                spaceBetween: 30,
+                navigation: {
+                    nextEl: el.querySelector(".slider-arrows__arrow--next"),
+                    prevEl: el.querySelector(".slider-arrows__arrow--prev"),
+                },
+                pagination: {
+                    el: el.querySelector(".swiper-pagination"),
+                    type: "bullets",
+                },
+                breakpoints: {
+                    320: {
+                        spaceBetween: 15,
+                        slidesPerView: 1,
+                    },
+                    768: {
+                        spaceBetween: 20,
+                        slidesPerView: 2,
+                    },
+                    960: {
+                        spaceBetween: 30,
+                        slidesPerView: 3,
+                    },
+                },
+            });
+        });
+    }
+})();

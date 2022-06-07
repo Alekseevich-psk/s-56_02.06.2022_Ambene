@@ -1,0 +1,13 @@
+@mixin swiper() {
+    .swiper-wrapper {
+        padding-bottom: 40px;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff;
+    }
+}

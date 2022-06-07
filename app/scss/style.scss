@@ -3,6 +3,7 @@
 @import 'node_modules/swiper/swiper-bundle';
 
 @import "./mixin/fonts";
+@import "./mixin/swiper";
 @import "fonts";
 
 @import "./setting/variables";
@@ -25,3 +26,4 @@
 @import "./section/contraindications";
 
 @import "./section/info";
+@import "./section/news";
