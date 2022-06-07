@@ -1,0 +1,10 @@
+.info {
+    padding: 120px 0;
+    position: relative;
+
+    @media(max-width: 960px) {
+        padding: 60px 0;
+    }
+
+
+}

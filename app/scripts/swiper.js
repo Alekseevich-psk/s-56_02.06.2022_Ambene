@@ -28,3 +28,20 @@
         },
     });
 })();
+
+(function () {
+    const slider = document.querySelector(".info__slider");
+    if (!slider) return;
+
+    new Swiper(slider, {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".info .slider-arrows__arrow--next",
+            prevEl: ".info .slider-arrows__arrow--prev",
+        },
+    });
+})();
