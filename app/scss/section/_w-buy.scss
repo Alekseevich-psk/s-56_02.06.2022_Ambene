@@ -1,0 +1,32 @@
+.w-buy {
+    padding: 120px 0;
+
+    @media (max-width: 960px) {
+        padding: 60px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__inner {
+        width: 32%;
+        margin-bottom: 2%;
+        background-color: $active;
+        padding: 32px;
+        text-align: center;
+        border-radius: 32px;
+        color: $whiteColor;
+
+        @media(max-width: 960px) {
+            border-radius: 16px;
+            width: 48%;
+        }
+    }
+
+    &__s-title {
+        margin-bottom: 40px;
+    }
+}
