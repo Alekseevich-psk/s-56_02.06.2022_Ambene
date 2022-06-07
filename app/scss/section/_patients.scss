@@ -1,0 +1,28 @@
+.patients {
+    padding-bottom: 120px;
+    
+    &__bg {
+        height: 560px;
+        background-image: url('../images/patients-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__gl-button {
+        padding-top: 30px;
+    }
+
+    &__desc {
+        font-size: 18px;
+        text-align: center;
+        color: $colorText;
+        line-height: 150%;
+        padding: 50px;
+    }
+
+}
