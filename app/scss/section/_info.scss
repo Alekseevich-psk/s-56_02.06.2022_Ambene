@@ -7,4 +7,17 @@
     }
 
 
+    .swiper-wrapper {
+        padding-bottom: 20px;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff;
+    }
+
+
 }
