@@ -140,6 +140,10 @@
         span {
             color: $subActive;
         }
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
     }
 
     &__desc {
@@ -153,6 +157,7 @@
 
     &__btn {
         @media (max-width: 768px) {
+            display: block;
             width: 100%;
         }
     }
