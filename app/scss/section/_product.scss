@@ -91,6 +91,7 @@
     }
 
     &__align {
+        padding-top: 10px;
 
         @media(max-width: 960px) {
             text-align: center;

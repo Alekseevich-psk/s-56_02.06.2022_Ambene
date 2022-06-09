@@ -1,0 +1,16 @@
+.doctors {
+    padding: 0 0 120px;
+
+    @media(max-width: 960px) {
+        padding: 0 0 60px;  
+    }
+
+    &__bg {
+        height: 620px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-image: url('../images/bg-doctors.jpg');
+    }
+}
