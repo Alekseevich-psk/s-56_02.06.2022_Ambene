@@ -1,0 +1,38 @@
+.analysis {
+    padding-bottom: 60px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-family: "axiforma";
+        color: $colorText;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    &__slide {
+        padding: 20px 20px 60px;
+        border-radius: 30px;
+        height: auto;
+        color: $colorText;
+        border: 1px solid $active;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    &__btn {
+        cursor: pointer;
+        color: $colorText;
+        background-color: transparent;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        text-decoration: underline;
+    }
+      
+
+}
