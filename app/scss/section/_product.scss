@@ -1,0 +1,111 @@
+.product {
+    padding: 120px 0;
+
+    @media (max-width: 960px) {
+        padding: 60px 0;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @media(max-width: 960px) {
+            flex-direction: column;
+        }
+    }
+
+    &__inner {
+        &:first-child {
+            width: 70%;
+            padding-right: 36px;
+
+            @media(max-width: 960px) {
+                width: 100%;
+                padding-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+
+        &:last-child {
+            width: 30%;
+
+            @media(max-width: 960px) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__video-bg {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../images/bg-video.jpg');
+        height: 470px;
+
+        @media(max-width: 768px) {
+            height: 360px;
+        }
+
+        @media(max-width: 540px) {
+            height: 250px;
+        }
+    }
+
+    &__picture {
+        margin-bottom: 40px;
+        width: 70%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        @media(max-width: 960px) {
+            width: 50%;
+            margin: 0 auto 40px;
+        }
+
+        @media(max-width: 768px) {
+            width: 70%;
+            margin: 0 auto 40px;
+        }
+    }
+
+    &__desc {
+        color: $colorText;
+        line-height: 120%;
+        margin-bottom: 10px;
+
+        @media(max-width: 960px) {
+            text-align: center;
+        }
+    }
+
+    &__pr-title {
+        margin-bottom: 10px;
+
+        @media(max-width: 960px) {
+            text-align: center;
+        }
+    }
+
+    &__align {
+
+        @media(max-width: 960px) {
+            text-align: center;
+        }
+    }
+
+    &__btn-desc {
+        cursor: pointer;
+        font-size: 14px;
+        font-family: "robotoCondensed";
+        color: $colorText;
+        margin-right: 14px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        background-color: transparent;
+    }
+
+}
