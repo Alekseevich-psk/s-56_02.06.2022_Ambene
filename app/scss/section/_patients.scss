@@ -11,11 +11,17 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+
+        @media(max-width: 960px) {
+            flex-direction: column;
+        }
     }
 
     &__gl-button {
         padding-top: 30px;
     }
+
+
 
     &__desc {
         font-size: 18px;
