@@ -7,6 +7,15 @@ body {
     font-weight: 400;
     background-image: url('../images/main-bg.png');
     background-size: cover;
+
+    &.hide {
+        display: none;
+        overflow-y: hidden;
+    }
+
+    &.no-scroll {
+        overflow-y: hidden;
+    }
 }
 
 * {
