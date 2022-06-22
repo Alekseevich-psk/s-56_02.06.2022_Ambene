@@ -1,0 +1,31 @@
+.about-product {
+    color: $active;
+    text-align: center;
+
+    &__title {
+        font-size: 28px;
+        font-family: "axiforma";
+        color: $active;
+        text-transform: uppercase;
+        line-height: 120%;
+        font-weight: 700;
+        margin-bottom: 12px;
+
+        span {
+            color: $subActive;
+        }
+    }
+
+    &__sub-title {
+        font-size: 20px;
+        line-height: 120%;
+        margin-bottom: 12px;
+        font-weight: 500;
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 140%;
+    }    
+
+}
