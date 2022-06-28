@@ -1,6 +1,6 @@
 .btn {
     background-color: $subActive;
-    border: none;
+    border: none !important;
     cursor: pointer;
     padding: $paddingRudBtn;
     text-transform: uppercase;
