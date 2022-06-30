@@ -9,6 +9,10 @@
     color: #004C74;
     line-height: 130%;
 
+    .insert {
+        display: block;
+    }
+
     &.active {
         display: block;
     }
