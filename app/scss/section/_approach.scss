@@ -118,6 +118,11 @@
         padding: 28px 40px 22px;
         font-size: 20px;
         text-align: center;
+        cursor: auto;
+
+        &:hover {
+            box-shadow: none !important;
+        }
 
         @media(max-width: 1230px) {
             padding: 24px 40px 22px;
