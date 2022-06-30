@@ -13,17 +13,18 @@
         if (el) {
             el.addEventListener("click", () => {
 
-                let elemForInnerPopup = document.querySelectorAll("[data-popup-id="+ CSS.escape(el.getAttribute('data-popup-id')) +"]")[1];
+                let elemForInnerPopup = document.querySelectorAll("[data-popup-id="+ CSS.escape(el.getAttribute('data-popup-id')) +"]");
 
-                if(elemForInnerPopup) {
-                    startPopup(parent);
-                    popupBodyEnter.classList.add('hide');
-                    popupBodyInner.classList.remove('hide');
-    
-                    popupBodyInner.appendChild(elemForInnerPopup.cloneNode(true));
-                } else {
-                    console.error("Елемент не найден! Проверьте data-popup-id елемента");
-                }
+                elemForInnerPopup.forEach(subElem => {
+                    if(subElem != el && subElem) {
+                        startPopup(parent);
+                        popupBodyEnter.classList.add('hide');
+                        popupBodyInner.classList.remove('hide');
+                        popupBodyInner.appendChild(subElem.cloneNode(true));
+                    } else {
+                        console.error("Елемент не найден! Проверьте data-popup-id елемента");
+                    }
+                })
                 
             });
         }
