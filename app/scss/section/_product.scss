@@ -42,12 +42,36 @@
         background-image: url('../images/bg-video.jpg');
         height: 470px;
 
+        &.hide {
+            display: none;
+        }
+
         @media(max-width: 768px) {
             height: 360px;
         }
 
         @media(max-width: 540px) {
             height: 250px;
+        }
+    }
+
+    &__video-wrap {
+        position: relative;
+
+        &.hide {
+            display: none;
+        }
+
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+
+            @media(max-width: 960px) {
+                position: relative;
+            }
         }
     }
 
