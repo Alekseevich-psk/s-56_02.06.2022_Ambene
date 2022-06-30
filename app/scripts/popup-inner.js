@@ -8,27 +8,27 @@
     const btnsOpen = document.querySelectorAll(".open__popup");
     const body = document.querySelector("body");
 
+    if(btnsOpen.length) {
+        btnsOpen.forEach((el) => {
+            if (el) {
+                el.addEventListener("click", () => {
+    
+                    let elemForInnerPopup = document.getElementById(el.getAttribute('data-popup-id'));
 
-    btnsOpen.forEach((el) => {
-        if (el) {
-            el.addEventListener("click", () => {
-
-                let elemForInnerPopup = document.querySelectorAll("[data-popup-id="+ CSS.escape(el.getAttribute('data-popup-id')) +"]");
-
-                elemForInnerPopup.forEach(subElem => {
-                    if(subElem != el && subElem) {
+                    if(elemForInnerPopup) {
                         startPopup(parent);
                         popupBodyEnter.classList.add('hide');
                         popupBodyInner.classList.remove('hide');
-                        popupBodyInner.appendChild(subElem.cloneNode(true));
+                        popupBodyInner.appendChild(elemForInnerPopup.cloneNode(true));
                     } else {
                         console.error("Елемент не найден! Проверьте data-popup-id елемента");
                     }
-                })
-                
-            });
-        }
-    });
+                    
+                });
+            }
+        });
+    }
+
 
     parent.addEventListener('click', (event) => {
         let target = event.target;
