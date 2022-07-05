@@ -8,25 +8,27 @@
 
     let flagPlay = true;
 
-    parent.addEventListener("click", function (e) {
-        let target = e.target;
-
-        if (target.classList.contains("product__video-bg")) {
-            videoBG.classList.add("hide");
-            videoWrap.classList.remove("hide");
-            videoPlayer.play();
-        }
-    });
-
-    videoWrap.addEventListener("click", () => {
-        if (flagPlay) {
-            videoPlayer.pause();
-            flagPlay = false;
-            console.log(flagPlay);
-        } else {
-            videoPlayer.play();
-            flagPlay = true;
-            console.log(flagPlay);
-        }
-    });
+    if(videoBG && videoWrap && videoPlayer) {
+        parent.addEventListener("click", function (e) {
+            let target = e.target;
+    
+            if (target.classList.contains("product__video-bg")) {
+                videoBG.classList.add("hide");
+                videoWrap.classList.remove("hide");
+                videoPlayer.play();
+            }
+        });
+    
+        videoWrap.addEventListener("click", () => {
+            if (flagPlay) {
+                videoPlayer.pause();
+                flagPlay = false;
+                console.log(flagPlay);
+            } else {
+                videoPlayer.play();
+                flagPlay = true;
+                console.log(flagPlay);
+            }
+        });
+    }
 })();
