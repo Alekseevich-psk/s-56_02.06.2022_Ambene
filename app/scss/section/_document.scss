@@ -38,6 +38,7 @@
     }
 
     h1, h2, h3, h4, h5 {
+        color: $subActive;
         line-height: 140%;
         margin-bottom: 16px;
     }
@@ -102,7 +103,6 @@
     
 
     .table__wrapper {
-        //min-width: 640px;
 
         @media(max-width: 768px) {
             overflow-x: auto;
@@ -123,8 +123,6 @@
     table th {
         font-weight: bold;
         padding: 5px;
-        //background: #efefef;
-        //border: 1px solid #dddddd;
     }
 
     table td {
@@ -145,11 +143,26 @@
         margin-bottom: 16px;
     }
 
+    b {
+        color: $subActive;
+    }
+
     ul, ol {
         padding: 0 12px 12px;
 
         li {
-            list-style-type:disc;
+            position: relative;
+            
+            &::after {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: -12px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $subActive;
+            }
         }
     }
 
