@@ -1,0 +1,14 @@
+.title-span {
+
+    &--color-active-1 {
+        color: $subActive !important;
+    }
+
+    &--color-active-2 {
+        color: $subColorTitle !important;
+    }
+
+    &--color-active-3 {
+        color: $subColorTitle2 !important;
+    }
+}
