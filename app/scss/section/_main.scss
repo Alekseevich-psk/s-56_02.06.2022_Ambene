@@ -88,11 +88,11 @@
 
         &--blur {
             img {
-                // @supports not (filter: contrast()) {
-                //    display: none;
-                // }
+                filter: blur(4px);
 
-                // filter: blur(4px);
+                &:hover {
+                    filter: none;
+                }
             }
         }
 
