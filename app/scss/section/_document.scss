@@ -1,5 +1,11 @@
 .document {
 
+    &__title {
+        color: $active !important;
+        line-height: 1 !important;
+        margin: 10px 0 30px !important;
+    }
+
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -48,7 +54,7 @@
     }
 
     h1 {
-        font-size: 42px;
+        font-size: 38px;
         font-weight: 700;
 
         @media(max-width: 960px) {
