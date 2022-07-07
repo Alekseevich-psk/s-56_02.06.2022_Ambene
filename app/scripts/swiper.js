@@ -80,6 +80,7 @@
             let slider = el.querySelector(".news__slider");
             new Swiper(slider, {
                 preloadImages: false,
+                simulateTouch: false,
                 spaceBetween: 30,
                 navigation: {
                     nextEl: el.querySelector(".slider-arrows__arrow--next"),
@@ -91,6 +92,7 @@
                 },
                 breakpoints: {
                     320: {
+                        // simulateTouch: true,
                         spaceBetween: 15,
                         slidesPerView: 1,
                     },
