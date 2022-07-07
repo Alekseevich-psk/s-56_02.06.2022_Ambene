@@ -34,12 +34,13 @@
     if (!analysisSlider) return;
 
     new Swiper(analysisSlider, {
+        simulateTouch: false,
         pagination: {
             el: ".swiper-pagination",
         },
         navigation: {
-            nextEl: ".slider-arrows__arrow--next",
-            prevEl: ".slider-arrows__arrow--prev",
+            nextEl: ".analysis .slider-arrows__arrow--next",
+            prevEl: ".analysis .slider-arrows__arrow--prev",
         },
         breakpoints: {
             320: {

@@ -109,6 +109,12 @@
         padding: 16px 18px;
         border: 1px solid $subActive;
 
+        sup {
+            vertical-align: top;
+            // line-height: 20px;
+            font-size: 12px;
+        }
+
         @media(max-width: 1024px) {
             position: relative;
         }
