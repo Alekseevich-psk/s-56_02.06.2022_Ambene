@@ -123,24 +123,6 @@
         text-transform: uppercase;
         line-height: 120%;
         color: $active;
-
-        &--green {
-            span {
-                &:first-child {
-                    color: $active;
-                }
-    
-                &:last-child {
-                    color: $subColorTitle2 !important;
-                }
-            }
-        }
-
-        span {
-            sup {
-
-            }
-        }
     }
 
     &__desc {
