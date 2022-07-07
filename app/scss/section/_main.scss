@@ -122,6 +122,7 @@
         font-weight: bold;
         text-transform: uppercase;
         line-height: 120%;
+        color: $active;
 
         &--green {
             span {
@@ -138,14 +139,6 @@
         span {
             sup {
 
-            }
-
-            &:first-child {
-                color: $active;
-            }
-
-            &:last-child {
-                color: $subColorTitle;
             }
         }
     }
