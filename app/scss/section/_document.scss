@@ -157,13 +157,13 @@
         color: $active;
     }
 
-    ul, ol {
+    ul{
         padding: 0 12px 12px;
 
         li {
             position: relative;
             
-            &::after {
+            &::before {
                 content: "";
                 position: absolute;
                 top: 10px;
@@ -172,6 +172,30 @@
                 height: 6px;
                 border-radius: 50%;
                 background-color: $active;
+            }
+        }
+    }
+
+    ol {
+        counter-reset: count; 
+        list-style-type: none;
+        padding: 0 16px 12px;
+
+        li {
+            position: relative;
+            padding-bottom: 16px;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+            
+            &::before {
+                counter-increment: count;
+                content: counters(count,".") ". ";
+                position: absolute;
+                top: 0;
+                left: -14px;
+                color: $active;
             }
         }
     }
