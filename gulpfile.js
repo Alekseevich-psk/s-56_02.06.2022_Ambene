@@ -97,7 +97,7 @@ function css() {
                 outputStyle: "expanded"
             })
         )
-        .pipe(sourcemaps.init({ loadMaps: true }))
+        // .pipe(sourcemaps.init({ loadMaps: true }))
         .pipe(
             autoprefixer({
                 overrideBrowserslist: ['last 5 version'],
