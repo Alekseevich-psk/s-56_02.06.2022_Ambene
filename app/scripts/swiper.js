@@ -3,6 +3,7 @@
     if (!buySlider) return;
 
     new Swiper(buySlider, {
+        simulateTouch: false,
         slidesPerView: 3,
         spaceBetween: 30,
         pagination: {
@@ -60,6 +61,7 @@
     if (!slider) return;
 
     new Swiper(slider, {
+        simulateTouch: false,
         slidesPerView: 1,
         spaceBetween: 30,
         pagination: {

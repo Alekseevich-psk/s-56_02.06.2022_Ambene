@@ -153,7 +153,7 @@
         }
 
         table {
-            border: 1px solid #eee;
+            // border: 1px solid #eee;
             table-layout: fixed;
             width: 100%;
             margin-bottom: 20px;
@@ -166,16 +166,16 @@
 
         table td {
             padding: 5px 10px;
-            border: 1px solid #9c9c9c;
+            // border: 1px solid #9c9c9c;
             text-align: left;
             vertical-align: middle;
-            background: #ffffff;
+            // background: #ffffff;
         }
 
-        table tbody tr:first-child,
-        table tbody tr:last-child {
-            background: #fff;
-        }
+        // table tbody tr:first-child,
+        // table tbody tr:last-child {
+        //     // background: #fff;
+        // }
 
         p {
             display: block;

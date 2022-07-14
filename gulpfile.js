@@ -112,7 +112,7 @@ function css() {
                 extname: ".min.css"
             })
         )
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(dest(path.build.css))
         .pipe(browsersync.stream())
 }
