@@ -40,6 +40,10 @@
         border-radius: 30px;
         background-color: #00B5E6;
 
+        @media(max-width: 1200px) {
+           padding-bottom: 140px;
+        }
+
         @media(max-width: 960px) {
             width: 100%;
             margin-bottom: 40px;
@@ -90,6 +94,10 @@
         transform: translateX(-50%);
         display: flex;
         justify-content: center;
+
+        @media(max-width: 1200px) {
+            flex-direction: column;
+        }
     }
 
     &__sub {
@@ -101,6 +109,7 @@
     }
 
     &__btn {
+        white-space: nowrap;
         cursor: pointer;
         background-color: transparent;
         color: $whiteColor;
@@ -108,8 +117,15 @@
         border: 1px solid $whiteColor;
         line-height: 1;
         padding: 6px 32px;
-        margin: 0 8px;
+        margin: 0 4px;
         transition: $transition;
+
+        @media(max-width: 1200px) {
+            width: 250px;
+            &:first-child {
+                margin-bottom: 12px;
+            }
+        }
 
         &:hover {
             color: $active;
