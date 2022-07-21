@@ -87,13 +87,13 @@
         }
 
         &--blur {
-            img {
-                filter: blur(4px);
+            // img {
+            //     filter: blur(4px);
 
-                &:hover {
-                    filter: none;
-                }
-            }
+            //     &:hover {
+            //         filter: none;
+            //     }
+            // }
         }
 
         img {
@@ -158,6 +158,11 @@
         @media(max-width: 960px) {
             position: relative;
             bottom: auto;
+        }
+
+        .open__popup {
+            font-weight: 700;
+            text-decoration: underline;
         }
     }
 }
